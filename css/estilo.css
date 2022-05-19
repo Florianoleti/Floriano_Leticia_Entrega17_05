@@ -20,9 +20,20 @@ body{
 	z-index: hidden;
 }
  
-.banner{
+#banner{
 	height: 100vh;
 	overflow: hidden ;
+}
+.align-center{
+	text-align: center;
+}
+.white{
+	color: #fff;
+	position: absolute;
+	top: 30%;
+	left: 40%;
+
+	
 }
 @keyframes zoom{
 	0%{
@@ -36,13 +47,13 @@ body{
 .banner img{
 	width: 100%;
 	animation-name: zoom;
-	animation-iteration-count: 10;
+	animation-iteration-count: 1;
 	animation-timing-function: linear;
 	animation-duration: 7s;
 	animation-fill-mode: forwards; 
 
 }
-}
+
 #blanco{
 	color: #fff;
 	font-size: 20px;
@@ -61,19 +72,10 @@ body{
 	font-family: 'Akshar', sans-serif;
 	font-weight: 700;
 	font-size: 15px;
-	text-align: center;
 	height: 100px;
   	width: 200px;
-  	vertical-align: middle;
+}
 
-}
-.centro2{
-	color: #F9FDFC;
-	font-family: 'Akshar', sans-serif;
-	font-weight: 300;
-	font-size: 15px;
-	padding: ;
-}
 .risk{
     color: #fff;
     background-color: #868686;
@@ -147,24 +149,14 @@ body#cursos{
 	font-size: 15px;
 }
 .cursos-container{
-	display: grid;
-	grid-template-columns: repeat(1,1fr);
-	grid-template-rows: repeat(1,1fr);
-	height: 30vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	height: 70vh;
 	width: 80%;
-	padding: 80px 70px 0px 0px;
-
+	background-color: #fff;
 }
 
-.box{
-	 display: flex ;
-	 border: 0px; 
-	 padding:15px; 
-	 width: 100%;
-	 height: 300px;
-	 background-color: #fff;
-	 border-radius: 10px;
-	box-sizing: content-box;
 
 }
 .boton{
@@ -174,16 +166,22 @@ body#cursos{
 	grid-template-rows: repeat(1,1fr);
 	height: 10px;
 	padding: 10px;
-	 border: 1px solid;  
-	 width: 30%;
-	 height: 30px;
-	 box-sizing: border-box;
-	 background-color: #3483fa;
-	 position: center;
-	 padding: 20px 20px 20px 20px;
-	 border-radius: 10px;
-	 justify-content: center;
-	 align-content: center;	   
+	border: 1px solid;  
+	width: 30%;
+	height: 30px;
+	box-sizing: border-box;
+	background-color: #3483fa;
+	position: center;
+	padding: 20px 20px 20px 20px;
+	border-radius: 10px;
+	justify-content: center;
+	align-content: center;	   
+}
+.card_title{
+	padding: 40px 0px 40px 0px;
+}
+.card_description{
+	height: 150px;
 }
 
 body#feedback{
@@ -223,12 +221,21 @@ body#contacto{
 
 }
 
+.contenido_superior{
+	height: 15vh;
+	padding: 20px;
+}
+
 @media (min-width: 425px) and (max-width: 992px)
 {
-	.containerFlex .item{
-	width: 100%;
-}
+	.box{
+		flex-direction: column;
+	}
 	.containerFlex div{
 		font-size: 1.5rem;
 	}
+img{
+	width: 100%;
+	height: 50% ;
+}
 }
