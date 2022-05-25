@@ -149,9 +149,7 @@ body#cursos{
 	font-size: 15px;
 }
 .cursos-container{
-	display: flex;
 	align-items: center;
-	flex-direction: column;
 	height: 70vh;
 	width: 80%;
 	background-color: #fff;
@@ -195,6 +193,49 @@ body#feedback{
 	font-weight: 700;
 	font-size: 15px;
 }
+
+.nombre{
+	color: #2E7191;
+	background-color: #fff;
+	display: grid;
+	grid-template-columns: repeat(1,1fr);
+	grid-template-rows: repeat(1,1fr);
+	height: 70px;
+	padding: 10px;
+	border: 1px solid;  
+	width: 100%;
+	box-sizing: border-box;
+	position: center;
+	padding: 20px 20px 20px 20px;
+	border-radius: 10px;
+	justify-content: center;
+	align-content: center;	
+
+}
+.star{
+	color: #FCEA0C;
+	position: relative;
+	display: inline;
+
+}
+.star_container{
+	position: relative;
+	display: inline;
+
+}
+.opnion{
+	font-family: 'Akshar', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	color: #868686;
+
+}
+
+.contenido_comentario{
+	height: 15px;
+	
+}
+
 body#contacto{
 	background-color: #efefef;
 	background-image: none;
@@ -208,6 +249,7 @@ body#contacto{
 	font-weight: 700;
 	font-size: 15px;
 }
+
 
 
 .form{
