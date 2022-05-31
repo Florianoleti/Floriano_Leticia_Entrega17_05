@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;700&display=swap');
+@import "fuentes";
+@import "variables";
+@import "main";
 
 *{
 	margin: 0;
@@ -154,7 +157,6 @@ body#cursos{
 }
 
 .boton{
-	color: #000000;
 	display: grid;
 	grid-template-columns: repeat(1,1fr);
 	grid-template-rows: repeat(1,1fr);
@@ -164,12 +166,17 @@ body#cursos{
 	width: 30%;
 	height: 30px;
 	box-sizing: border-box;
-	background-color: #3483fa;
 	position: center;
 	padding: 20px 20px 20px 20px;
 	border-radius: 10px;
 	justify-content: center;
-	align-content: center;	   
+	align-content: center;	  
+
+}
+.boton--success{
+	@extend .boton;
+	background-color: #3483fa;
+	color: #fff;
 }
 .card_title{
 	padding: 40px 0px 40px 0px;
@@ -247,9 +254,20 @@ body#contacto{
 	font-weight: 700;
 	font-size: 15px;
 }
+ 
+@mixin titulocontacto{ 
+	font-size: 25px;
+	font-family: 'Akshar', sans-serif ;
+	color: red;
+	opacity: 60%;
+	text-align: center;
+}
+.tituloh1{
+	@include titulocontacto
+}
 
 
-
+	
 .form{
 	display: flex; 
     flex-direction: column;
