@@ -23,6 +23,7 @@ body{
 	z-index: hidden;
 }
  
+
 #banner{
 	height: 100vh;
 	overflow: hidden ;
@@ -87,7 +88,7 @@ body{
 .header{
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: center ;
 	width: 100%;
 	height: 8%;
 	background-color: #000000;
@@ -185,6 +186,8 @@ body#cursos{
 	height: 150px;
 }
 
+
+}
 body#feedback{
 	background-color: #efefef;
 	background-image: none;
