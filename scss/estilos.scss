@@ -9,6 +9,8 @@
 	}
 .menu{	
  	text-align: right;
+	margin-top: 0;
+	margin-bottom: 1rem;
  }	
 body{
 	background-color: #fff;
@@ -22,7 +24,13 @@ body{
 	font-weight: 700;
 	z-index: hidden;
 }
- 
+
+.cajita{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 
 #banner{
 	height: 100vh;
@@ -95,6 +103,7 @@ body{
 	color:#fff;
 	position: fixed;
 	z-index: 10;
+
 	
 }
 .contenido{
@@ -186,8 +195,6 @@ body#cursos{
 	height: 150px;
 }
 
-
-}
 body#feedback{
 	background-color: #efefef;
 	background-image: none;
@@ -257,6 +264,18 @@ body#contacto{
 	font-weight: 700;
 	font-size: 15px;
 }
+
+.formulario_contacto{
+	margin-left: 10cm;
+	margin-right: 10cm;
+}
+
+.titulocontacto{
+	margin-right: 10cm;
+	margin-left: 10cm;
+	
+}
+
  
 @mixin titulocontacto{ 
 	font-size: 25px;
@@ -264,6 +283,8 @@ body#contacto{
 	color: red;
 	opacity: 60%;
 	text-align: center;
+	margin-right: 15cm;
+	margin-left: 15cm;
 }
 .tituloh1{
 	@include titulocontacto
@@ -297,5 +318,12 @@ img{
 	width: 100%;
 	height: 50% ;
 }
-
+.header{
+	width: auto;
+	height: auto;
+}
+.menu{
+	width: auto;
+	height: auto;
+}
 }
