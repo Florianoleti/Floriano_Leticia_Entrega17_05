@@ -11,9 +11,10 @@
  	text-align: right;
 	margin-top: 0;
 	margin-bottom: 1rem;
+
  }	
 body{
-	background-color: #fff;
+	background-color: #000;
 	background-size: cover;
  	background-position: center;
  	height: 100vh;
@@ -23,18 +24,26 @@ body{
 	font-family: 'Akshar', sans-serif;
 	font-weight: 700;
 	z-index: hidden;
+	font-size: 15px;
+}
+.navbar{
+	z-index: 2;
+	width: 100%;
 }
 
 .cajita{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-right: 21cm;
+	margin-top: 0.5cm;
 }
-
 
 #banner{
 	height: 100vh;
 	overflow: hidden ;
+	z-index: 1;
+	
 }
 .align-center{
 	text-align: center;
@@ -92,6 +101,7 @@ body{
 	font-size: 15px;
 	font-family: 'Akshar', sans-serif;
 	font-weight: 400;
+	
 }
 .header{
 	display: flex;
@@ -106,10 +116,7 @@ body{
 
 	
 }
-.contenido{
-	height: 30vh;
-	padding: 120px;
-}
+
 .menu li{
     display: inline;
     color: #fff;
@@ -166,6 +173,9 @@ body#cursos{
 	background-color: #fff;
 }
 
+.col{
+	margin-top: 3cm;	
+}
 .boton{
 	display: grid;
 	grid-template-columns: repeat(1,1fr);
@@ -246,11 +256,6 @@ body#feedback{
 
 }
 
-.contenido_comentario{
-	height: 15px;
-	
-}
-
 body#contacto{
 	background-color: #efefef;
 	background-image: none;
@@ -265,15 +270,12 @@ body#contacto{
 	font-size: 15px;
 }
 
-.formulario_contacto{
-	margin-left: 10cm;
-	margin-right: 10cm;
-}
-
-.titulocontacto{
-	margin-right: 10cm;
-	margin-left: 10cm;
+.redes_sociales_quiensoy{
+	margin-top: 15cm;
 	
+}
+.redes_sociales_otras{
+	margin-top: 5cm;
 }
 
  
@@ -301,10 +303,7 @@ body#contacto{
 
 }
 
-.contenido_superior{
-	height: 15vh;
-	padding: 20px;
-}
+
 
 @media (min-width: 425px) and (max-width: 992px)
 {
@@ -315,7 +314,7 @@ body#contacto{
 		font-size: 1.5rem;
 	}
 img{
-	width: 100%;
+	
 	height: 50% ;
 }
 .header{
