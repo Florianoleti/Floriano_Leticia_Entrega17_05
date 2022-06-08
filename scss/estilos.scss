@@ -139,6 +139,10 @@ body#quiensoy{
 	font-weight: 700;
 	font-size: 15px;
 }
+
+.card-body{
+	color: #868686;
+}
 .texto-foto{
 	display: grid;
 	grid-template-columns: repeat(2,1fr);
@@ -271,7 +275,7 @@ body#contacto{
 }
 
 .redes_sociales_quiensoy{
-	margin-top: 15cm;
+	margin-top: 6cm;
 	
 }
 .redes_sociales_otras{
