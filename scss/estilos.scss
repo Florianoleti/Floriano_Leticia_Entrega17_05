@@ -14,7 +14,7 @@
 
  }	
 body{
-	background-color: #000;
+	background-color: #fff;
 	background-size: cover;
  	background-position: center;
  	height: 100vh;
@@ -35,8 +35,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-right: 21cm;
-	margin-top: 0.5cm;
+	
 }
 
 #banner{
@@ -51,7 +50,7 @@ body{
 .white{
 	color: #fff;
 	position: absolute;
-	top: 30%;
+	top: 8cm;
 	left: 40%;	
 }
 @keyframes zoom{
@@ -63,13 +62,12 @@ body{
 
 	}	
 }
+ 
 .banner img{
 	width: 100%;
-	animation-name: zoom;
-	animation-iteration-count: 1;
-	animation-timing-function: linear;
-	animation-duration: 7s;
-	animation-fill-mode: forwards; 
+	
+	
+	
 
 }
 
@@ -170,6 +168,7 @@ body#cursos{
 	font-weight: 700;
 	font-size: 15px;
 }
+
 .cursos-container{
 	align-items: center;
 	height: 70vh;
@@ -201,6 +200,7 @@ body#cursos{
 	@extend .boton;
 	background-color: #3483fa;
 	color: #fff;
+
 }
 .card_title{
 	padding: 40px 0px 40px 0px;
@@ -281,6 +281,9 @@ body#contacto{
 .redes_sociales_otras{
 	margin-top: 5cm;
 }
+.redes_sociales_index{
+	margin-top: 0;
+}
 
  
 @mixin titulocontacto{ 
@@ -326,6 +329,10 @@ img{
 	height: auto;
 }
 .menu{
+	width: auto;
+	height: auto;
+}
+.gaston{
 	width: auto;
 	height: auto;
 }
