@@ -47,28 +47,18 @@ body{
 .align-center{
 	text-align: center;
 }
+
 .white{
 	color: #fff;
 	position: absolute;
 	top: 8cm;
-	left: 40%;	
+	left: 40%;
+	text-align: center;
+		
 }
-@keyframes zoom{
-	0%{
-		transform: scale(1) ;
-	}
-	100%{
-		transform: scale(1.2);
 
-	}	
-}
- 
 .banner img{
 	width: 100%;
-	
-	
-	
-
 }
 
 #blanco{
@@ -76,7 +66,6 @@ body{
 	font-size: 20px;
 	padding:50px 0px 0px 0px;
 }
-
 
 #negro{
 	color: #000000;
@@ -200,6 +189,7 @@ body#cursos{
 	@extend .boton;
 	background-color: #3483fa;
 	color: #fff;
+	
 
 }
 .card_title{
@@ -276,7 +266,7 @@ body#contacto{
 
 .redes_sociales_quiensoy{
 	margin-top: 6cm;
-	
+
 }
 .redes_sociales_otras{
 	margin-top: 5cm;
